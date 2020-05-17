@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Anant Sharma        -   CEO
+    Shwetank Shrey      -   CTO
+    Aman Parnami        -   CXO
+    Ayush Kushwaha      -   Sports Scientist
+    Vishal Singh Sengar -   Principal Designer
+
+# THANKS
+
+    Rest of Tweek Labs Pvt. Ltd. and everyone who we have been able to help.
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css

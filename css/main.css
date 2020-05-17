@@ -1,0 +1,608 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  height: 100%;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #ff7955;
+  text-shadow: none;
+}
+
+::selection {
+  background: #ff7955;
+  text-shadow: none;
+}
+
+body {
+  min-height: 100%;
+  background-color: #181818;
+  /* background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, #333333 1px, #181818 1px),
+    linear-gradient(to bottom, #333333 1px, #181818 1px); */
+  color: #d6d6d6;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.tagline-font {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.parameter-heading-font {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.semibold-font {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 60px;
+  margin-top: 0;
+}
+
+.orangish-colour {
+  color: #ff7955;
+}
+
+.content-container {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.screen-6-content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.screen-6-content-left h3 {
+  margin: 0;
+}
+
+.screen-6-content-left p {
+  margin: 0;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.iframe-container iframe {
+  margin-left: 5vw;
+  margin-top: 5vh;
+  height: 90vh;
+  width: 90vw;
+  border: 0;
+}
+
+.screen-3-content-left, .screen-4-content-left, .screen-5-content-left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen-3-content-left {
+  justify-content: flex-end;
+}
+
+.screen-4-content-left {
+  justify-content: center;
+}
+
+.screen-5-content-left {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.kompress-img {
+  height: 95vh;
+}
+
+.module-img {
+ height: 50vh; 
+}
+
+.screenshot-1-img {
+  height: 31vh; 
+}
+
+.screenshot-2-img {
+  height: 40vh; 
+}
+
+.screenshot-3-img {
+  height: 22vh; 
+}
+
+.bullet-list {
+  list-style-type: none;
+  margin-left: -40px;
+  padding-left: 0;
+}
+
+.bullet-list li {
+  padding-left: 40px;
+  margin-top: 4.5vh;
+  margin-bottom: 4.5vh;
+  background-image: url(../img/bullet.png);
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: left center;
+}
+
+.bullet-list li.mobile-item {
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  padding-top: 5.5vh;
+  padding-bottom: 5.5vh;
+  background-image: url(../img/mobile.png);
+  background-size: 20px 40px;
+}
+
+.bullet-list li.tablet-item {
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  margin-left: -20px;
+  padding-top: 5.5vh;
+  padding-bottom: 5.5vh;
+  padding-left: 60px;
+  background-image: url(../img/tablet.png);
+  background-size: 40px 30px;
+}
+
+.bullet-list li.laptop-item {
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  margin-left: -30px;
+  padding-top: 5.5vh;
+  padding-bottom: 5.5vh;
+  padding-left: 70px;
+  background-image: url(../img/laptop.png);
+  background-size: 50px 30px;
+}
+
+.analytics-ltr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.analytics-rtl {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+}
+
+.analytics-img-ma {
+  height: 70px;
+}
+
+.analytics-img-b {
+  height: 60px;
+}
+
+.analytics-img-hs {
+  height: 55px;
+}
+
+.analytics-img-f {
+  height: 80px;
+}
+
+.parameters-list-ltr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.parameters-list-rtl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.parameters-outer {
+  margin-top: 30px;
+}
+
+.parameters-outer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.parameters-outer li {
+  margin: 15px;
+}
+
+.parameter-image-bat {
+  height: 60px;
+}
+
+.parameter-image-ball {
+  height: 30px;
+}
+
+@media only screen 
+  and (min-width: 1200px) 
+  and (orientation: landscape) {
+    .content-container {
+      height: 100vh;
+    }
+
+    .content-left {
+      margin-left: 5vw;
+      width: 40vw;
+    }
+
+    .content-right {
+      margin-right: 5vw;
+      width: 40vw;
+    }
+      
+    .main-logo {
+      width: 20vw;
+    }
+
+    .screen-3-content-left, .screen-4-content-left, .screen-5-content-left {
+      height: 100%;
+    }
+    
+    .analytics-rtl {
+      flex-direction: row-reverse;
+    }
+    
+    .analytics-content-left h3 {
+      text-align: right;
+    }
+
+    .analytics-content-right {
+      flex: 0 0 20vw;
+    }
+
+    .analytics-content-left {
+      flex: 0 0 20vw;
+    }
+
+    .analytics-content-img-right {
+      flex: 0 0 18vw;
+    }
+
+    .analytics-content-img-left {
+      flex: 0 0 18vw;
+      text-align: right;
+    }
+
+    .parameters-list-rtl {
+      flex-direction: row-reverse;
+    }
+
+    .parameter-type-image-left {
+      flex: 0 0 18vw;
+      text-align: right;
+    }
+    
+    .parameter-type-image-right {
+      flex: 0 0 18vw;
+    }
+    
+    .parameter-list-right {
+      flex: 0 0 20vw;
+    }
+    
+    .parameter-list-left {
+      flex: 0 0 20vw;
+      text-align: right;
+    }
+    
+}
+
+@media only screen 
+  and (min-width: 1200px) 
+  and (orientation: portrait) {
+    .content-container {
+      flex-direction: column;
+    }
+
+    .screen-6-content-container {
+      flex-direction: column-reverse;
+    }
+    
+    .content-left {
+      margin: 5vw;
+      width: 90vw;
+    }
+
+    .content-right {
+      margin-left: 20vw;
+      margin-right: 5vw;
+      width: 75vw;
+    }
+
+    .main-logo {
+      width: 50vw;
+    }
+
+    .analytics-ltr, .analytics-rtl {
+      padding-top: 5.5vh;
+      padding-bottom: 5.5vh;
+    }
+
+    .analytics-content-right, .analytics-content-left {
+      flex: 0 0 60vw;
+    }
+
+    .analytics-content-img-right, .analytics-content-img-left {
+      flex: 0 0 25vw;
+      text-align: right;
+    }
+
+    .parameter-type-image-right, .parameter-type-image-left {
+      flex: 0 0 18vw;
+      text-align: right;
+    }
+    
+    .parameter-list-right, .parameter-list-left {
+      flex: 0 0 20vw;
+    }
+}
+
+@media only screen 
+  and (max-width: 1200px) {
+    .content-container {
+      flex-direction: column;
+    }
+
+    .screen-6-content-container {
+      flex-direction: column-reverse;
+    }
+    
+    .content-left {
+      margin: 5vw;
+      width: 90vw;
+    }
+
+    .content-right {
+      margin-left: 25vw;
+      margin-right: 5vw;
+      width: 70vw;
+    }
+
+    .main-logo {
+      width: 50vw;
+    }
+
+    .analytics-ltr, .analytics-rtl {
+      padding-top: 5.5vh;
+      padding-bottom: 5.5vh;
+    }
+
+    .analytics-content-right, .analytics-content-left {
+      flex: 0 0 60vw;
+    }
+
+    .analytics-content-img-right, .analytics-content-img-left {
+      flex: 0 0 25vw;
+      text-align: right;
+    }
+
+    .parameters-list-ltr, .parameters-list-rtl {
+      padding-top: 6vh;
+    }
+
+    .parameter-type-image-right, .parameter-type-image-left {
+      flex: 0 0 10vw;
+      text-align: right;
+    }
+    
+    .parameter-list-right, .parameter-list-left {
+      flex: 0 0 55vw;
+    }
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
